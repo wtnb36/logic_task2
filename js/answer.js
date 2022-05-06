@@ -5,6 +5,7 @@ function answer1() {
   if (quiz_1.answer.value == "a" || quiz_1.answer.value == "b" || quiz_1.answer.value == "c") {
     if (quiz_1.answer.value == 'a') {
       document.getElementById('a1_answer').innerHTML = "正解";
+      document.getElementById('a1_answer').className = "answer"
       document.getElementById('a1_caution').innerHTML = "";
       array.push("正解");
     } else if (quiz_1.answer.value == 'b') {
@@ -31,6 +32,7 @@ function answer2() {
   if (quiz_2.a2.value.match(/^[0-9]+$/)) {
     if (quiz_2.a2.value == "108") {
       document.getElementById('a2_answer').innerHTML = "正解";
+      document.getElementById('a2_answer').className = "answer"
       document.getElementById('a2_caution').innerHTML = "";
       array.push("正解");
     } else {
@@ -54,6 +56,7 @@ function answer3() {
   const check3 = document.getElementById('check3');
   if (check1.checked == true && check2.checked == false && check3.checked == false) {
     document.getElementById('a3_answer').innerHTML = "正解";
+    document.getElementById('a3_answer').className = "answer"
     array.push("正解");
   } else {
     document.getElementById('a3_answer').innerHTML = "不正解";
