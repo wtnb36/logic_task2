@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/answer.js"></script>
+  <title>ロジック課題②</title>
+</head>
+
+<body>
+  <div>
+    <h3>問題1</h3>
+    <form id="quiz-1">
+      <p>以下のポケモンの中で素早さの種族値が一番高いポケモンを選択してください</p>
+      <input name="answer" type="radio" value="a"><a>ウツロイド</a>
+      <input name="answer" type="radio" value="b">ガブリアス
+      <input name="answer" type="radio" value="c">ボルトロス(霊獣フォルム)
+      <p id="a1_answer" class="answer"></p>
+      <p id="a1_caution"></p>
+    </form>
+  </div>
+  <div>
+    <h3>問題2</h3>
+    <form id="quiz-2">
+      <p>ガブリアスのHPの種族値を半角数値で入力してください</p>
+      <input name="a2">
+      <p id="a2_answer" class="answer"></p>
+      <p id="a2_caution"></p>
+    </form>
+  </div>
+  <div>
+    <form id="quiz-3">
+      <h3>問題3</h3>
+      <p>以下から正しいものだけを選択してください</p>
+      <label><input type="checkbox" id="check1">ガブリアスの進化前はガバイトである<br></label>
+      <label><input type="checkbox" id="check2">ガブリアスはレベルアップでげきりんを覚える<br></label>
+      <label><input type="checkbox" id="check3">ガブリアスの通常特性はすなのちからである</label>
+      <p id="a3_answer" class="answer"></p>
+    </form>
+  </div>
+  <div>
+    <p id="all_answer"></p>
+    <button class="all_answer" onclick="allAnswer()">解答</button>
+  </div>
+
+  <div class="main_visual">
+    <ul class="main_visual_slider">
+      <li><img src="img/logo .png"></li>
+      <li><img src="img/main1.jpg"></li>
+      <li><img src="img/main2.jpg"></li>
+      <li><img src="img/main3.jpg"></li>
+      <li><img src="img/main4.jpg"></li>
+    </ul>
+  </div>
+  <script src="js/slider.js"></script>
+</body>
+
+</html>

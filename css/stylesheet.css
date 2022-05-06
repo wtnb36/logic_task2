@@ -1,0 +1,36 @@
+.main_visual{
+  margin-top:50px;
+  width:100%;
+  height:500px;
+}
+
+.main_visual img {
+  object-fit: cover;
+  width: 50%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.answer{
+  color:blue;
+}
+
+.incorrect{
+  color:red;
+}
+
+body{
+  width:100%;
+  text-align:center;
+}
+
+.all_answer{
+  margin-top:50px;
+  width:10rem;
+  height:5rem;
+  font-size:2rem;
+}
+
+p{
+  font-size:1.25rem;
+}
